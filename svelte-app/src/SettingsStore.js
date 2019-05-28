@@ -1,0 +1,43 @@
+import { writable } from 'svelte/store';
+
+export const settings = writable({
+    HtmlInputs :{
+		    label : "" ,
+		    id : "" ,
+		    type : "",
+        name : "",
+        value : "",
+	      required : "",
+	      autocomplete : "",
+        placeholder :"",
+        readonly : "",
+        disabled : "",
+        autofocus : "",
+        formenctype : "",
+        size : 0,
+        maxlength : 0,
+        minlength : 0,
+        step : 0,
+        min : 0,
+        max : 0,
+        pattern : "",
+        own_pattern : "",
+        height : 0,
+        width : 0,    
+        checked : "",
+        rows : 0,
+        cols : 0,
+        },
+    angularJs : {
+			ng_model : "",
+			ng_required : "",	
+			ng_disabled : "",
+      ng_maxlength : null,
+      ng_minLength : null,	//used as number field, hence special handling. Otherwise we would have used "" as its value.
+      ng_max : null,
+      ng_min : null,
+      ng_pattern : "",
+      own_ng_pattern : "",
+    },
+    form_name: "",
+});
